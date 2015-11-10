@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="rbZ-93-cTh">
+            <objects>
+                <navigationController id="YuB-g4-pSl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5i5-Pt-dSp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2ti-Hi-k9N" kind="show" id="GA0-uQ-nhL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8AQ-pK-CmL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1362" y="385"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="fks-Zp-WMH">
+            <objects>
+                <viewController id="2ti-Hi-k9N" customClass="UICollectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ie8-4I-QfF"/>
+                        <viewControllerLayoutGuide type="bottom" id="XaN-9x-aPP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iv8-vV-Z9g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXD-u5-mJy">
+                                <rect key="frame" x="210" y="242" width="180" height="70"/>
+                                <state key="normal" title="Elevi"/>
+                                <connections>
+                                    <segue destination="1qp-8E-6fl" kind="show" id="vWT-g3-5gu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10f-ma-19e">
+                                <rect key="frame" x="210" y="153" width="180" height="70"/>
+                                <state key="normal" title="Clase"/>
+                                <connections>
+                                    <segue destination="xJc-OO-MNk" kind="show" id="Ocb-bZ-39Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycH-Cj-ENs">
+                                <rect key="frame" x="210" y="419" width="180" height="70"/>
+                                <state key="normal" title="Discipline"/>
+                                <connections>
+                                    <segue destination="5Tt-7b-x0Z" kind="show" id="3QA-iJ-fWs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGe-Sd-11c">
+                                <rect key="frame" x="210" y="330" width="180" height="70"/>
+                                <state key="normal" title="Profesori"/>
+                                <connections>
+                                    <segue destination="G6i-j7-eyy" kind="show" id="Oxu-hY-hcr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6AU-3x-hMY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-702" y="385"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="6Zi-Z9-W90">
+            <objects>
+                <viewController id="xJc-OO-MNk" customClass="UICollectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FZT-VA-mWb"/>
+                        <viewControllerLayoutGuide type="bottom" id="h6a-Fv-k05"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iMw-lF-KPb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YJX-qS-5cq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="-728"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="M4y-kk-4Ia">
+            <objects>
+                <viewController id="1qp-8E-6fl" customClass="UICollectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gH4-sP-5ck"/>
+                        <viewControllerLayoutGuide type="bottom" id="1le-Ct-Vb7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ayg-D5-uwP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jhG-d5-mS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="-59"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="SMf-V0-j2U">
+            <objects>
+                <viewController id="G6i-j7-eyy" customClass="UICollectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ME5-8f-2b9"/>
+                        <viewControllerLayoutGuide type="bottom" id="mSe-d7-vQN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ftt-Jj-5xE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VPH-xy-G60" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="605"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="b2s-8Y-xON">
+            <objects>
+                <viewController id="5Tt-7b-x0Z" customClass="UICollectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A7Y-PN-1jC"/>
+                        <viewControllerLayoutGuide type="bottom" id="WBn-Rk-ErU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jnc-XU-jBv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gPv-wr-4E0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="1261"/>
+        </scene>
+    </scenes>
+</document>

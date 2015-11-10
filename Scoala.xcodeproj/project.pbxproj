@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D404990D1BEB6CF000AA2583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D404990C1BEB6CF000AA2583 /* Main.storyboard */; };
+		D404990F1BEB6DD900AA2583 /* MeniuPrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404990E1BEB6DD900AA2583 /* MeniuPrincipalViewController.swift */; };
+		D40499111BEB6EE400AA2583 /* ListaClaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40499101BEB6EE400AA2583 /* ListaClaseTableViewController.swift */; };
+		D40499131BEB778800AA2583 /* DetaliiClasaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40499121BEB778800AA2583 /* DetaliiClasaViewController.swift */; };
+		D43EA8491BE3B21E0069F67A /* Disciplina.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43EA8481BE3B21E0069F67A /* Disciplina.swift */; };
+		D45BEAF01BF0BEE800533E2E /* DetaliiElevViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45BEAEF1BF0BEE800533E2E /* DetaliiElevViewController.swift */; };
+		D48659471BF0A38300946C3C /* ListaEleviTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48659461BF0A38300946C3C /* ListaEleviTableViewController.swift */; };
+		D48659491BF0B2A700946C3C /* ListaProfesoriTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48659481BF0B2A700946C3C /* ListaProfesoriTableViewController.swift */; };
+		D486594B1BF0B2B800946C3C /* ListaDisciplineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D486594A1BF0B2B800946C3C /* ListaDisciplineTableViewController.swift */; };
+		D49A62F91BE0E07300F406C3 /* Profesor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49A62F81BE0E07300F406C3 /* Profesor.swift */; };
+		D49A62FB1BE0E09200F406C3 /* Elev.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49A62FA1BE0E09200F406C3 /* Elev.swift */; };
+		D4C1CBA21BE0C5C100E363B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1CBA01BE0C5C100E363B5 /* AppDelegate.swift */; };
+		D4C1CBA41BE0C65700E363B5 /* Persoana.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1CBA31BE0C65700E363B5 /* Persoana.swift */; };
+		D4C1CBA61BE0C82600E363B5 /* Clasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1CBA51BE0C82600E363B5 /* Clasa.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D404990C1BEB6CF000AA2583 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D404990E1BEB6DD900AA2583 /* MeniuPrincipalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeniuPrincipalViewController.swift; sourceTree = "<group>"; };
+		D40499101BEB6EE400AA2583 /* ListaClaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaClaseTableViewController.swift; sourceTree = "<group>"; };
+		D40499121BEB778800AA2583 /* DetaliiClasaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetaliiClasaViewController.swift; sourceTree = "<group>"; };
+		D43EA8481BE3B21E0069F67A /* Disciplina.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disciplina.swift; sourceTree = "<group>"; };
+		D45BEAEF1BF0BEE800533E2E /* DetaliiElevViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetaliiElevViewController.swift; sourceTree = "<group>"; };
+		D48659461BF0A38300946C3C /* ListaEleviTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaEleviTableViewController.swift; sourceTree = "<group>"; };
+		D48659481BF0B2A700946C3C /* ListaProfesoriTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaProfesoriTableViewController.swift; sourceTree = "<group>"; };
+		D486594A1BF0B2B800946C3C /* ListaDisciplineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaDisciplineTableViewController.swift; sourceTree = "<group>"; };
+		D49A62F81BE0E07300F406C3 /* Profesor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profesor.swift; sourceTree = "<group>"; };
+		D49A62FA1BE0E09200F406C3 /* Elev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elev.swift; sourceTree = "<group>"; };
+		D4C1CB741BE0C45E00E363B5 /* Scoala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scoala.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C1CB781BE0C45F00E363B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C1CBA01BE0C5C100E363B5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D4C1CBA31BE0C65700E363B5 /* Persoana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persoana.swift; sourceTree = "<group>"; };
+		D4C1CBA51BE0C82600E363B5 /* Clasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clasa.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4C1CB711BE0C45E00E363B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D404990B1BEB6CD600AA2583 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D404990C1BEB6CF000AA2583 /* Main.storyboard */,
+				D45BEAEF1BF0BEE800533E2E /* DetaliiElevViewController.swift */,
+				D48659481BF0B2A700946C3C /* ListaProfesoriTableViewController.swift */,
+				D486594A1BF0B2B800946C3C /* ListaDisciplineTableViewController.swift */,
+				D48659461BF0A38300946C3C /* ListaEleviTableViewController.swift */,
+				D404990E1BEB6DD900AA2583 /* MeniuPrincipalViewController.swift */,
+				D40499101BEB6EE400AA2583 /* ListaClaseTableViewController.swift */,
+				D40499121BEB778800AA2583 /* DetaliiClasaViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D4C1CB6B1BE0C45E00E363B5 = {
+			isa = PBXGroup;
+			children = (
+				D4C1CB761BE0C45E00E363B5 /* Scoala */,
+				D4C1CB751BE0C45E00E363B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4C1CB751BE0C45E00E363B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4C1CB741BE0C45E00E363B5 /* Scoala.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4C1CB761BE0C45E00E363B5 /* Scoala */ = {
+			isa = PBXGroup;
+			children = (
+				D404990B1BEB6CD600AA2583 /* UI */,
+				D4C1CBA01BE0C5C100E363B5 /* AppDelegate.swift */,
+				D4C1CBA11BE0C5C100E363B5 /* Classes */,
+				D4C1CB771BE0C45E00E363B5 /* Supporting Files */,
+			);
+			path = Scoala;
+			sourceTree = "<group>";
+		};
+		D4C1CB771BE0C45E00E363B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4C1CB781BE0C45F00E363B5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4C1CBA11BE0C5C100E363B5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D4C1CBA51BE0C82600E363B5 /* Clasa.swift */,
+				D4C1CBA31BE0C65700E363B5 /* Persoana.swift */,
+				D49A62FA1BE0E09200F406C3 /* Elev.swift */,
+				D49A62F81BE0E07300F406C3 /* Profesor.swift */,
+				D43EA8481BE3B21E0069F67A /* Disciplina.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4C1CB731BE0C45E00E363B5 /* Scoala */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4C1CB931BE0C45F00E363B5 /* Build configuration list for PBXNativeTarget "Scoala" */;
+			buildPhases = (
+				D4C1CB701BE0C45E00E363B5 /* Sources */,
+				D4C1CB711BE0C45E00E363B5 /* Frameworks */,
+				D4C1CB721BE0C45E00E363B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scoala;
+			productName = Scoala;
+			productReference = D4C1CB741BE0C45E00E363B5 /* Scoala.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4C1CB6C1BE0C45E00E363B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = AP;
+				TargetAttributes = {
+					D4C1CB731BE0C45E00E363B5 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = D4C1CB6F1BE0C45E00E363B5 /* Build configuration list for PBXProject "Scoala" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4C1CB6B1BE0C45E00E363B5;
+			productRefGroup = D4C1CB751BE0C45E00E363B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4C1CB731BE0C45E00E363B5 /* Scoala */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4C1CB721BE0C45E00E363B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D404990D1BEB6CF000AA2583 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4C1CB701BE0C45E00E363B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D404990F1BEB6DD900AA2583 /* MeniuPrincipalViewController.swift in Sources */,
+				D48659471BF0A38300946C3C /* ListaEleviTableViewController.swift in Sources */,
+				D48659491BF0B2A700946C3C /* ListaProfesoriTableViewController.swift in Sources */,
+				D4C1CBA41BE0C65700E363B5 /* Persoana.swift in Sources */,
+				D40499111BEB6EE400AA2583 /* ListaClaseTableViewController.swift in Sources */,
+				D40499131BEB778800AA2583 /* DetaliiClasaViewController.swift in Sources */,
+				D4C1CBA21BE0C5C100E363B5 /* AppDelegate.swift in Sources */,
+				D45BEAF01BF0BEE800533E2E /* DetaliiElevViewController.swift in Sources */,
+				D4C1CBA61BE0C82600E363B5 /* Clasa.swift in Sources */,
+				D43EA8491BE3B21E0069F67A /* Disciplina.swift in Sources */,
+				D49A62FB1BE0E09200F406C3 /* Elev.swift in Sources */,
+				D49A62F91BE0E07300F406C3 /* Profesor.swift in Sources */,
+				D486594B1BF0B2B800946C3C /* ListaDisciplineTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D4C1CB911BE0C45F00E363B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4C1CB921BE0C45F00E363B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4C1CB941BE0C45F00E363B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Scoala/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D4C1CB951BE0C45F00E363B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Scoala/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4C1CB6F1BE0C45E00E363B5 /* Build configuration list for PBXProject "Scoala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C1CB911BE0C45F00E363B5 /* Debug */,
+				D4C1CB921BE0C45F00E363B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4C1CB931BE0C45F00E363B5 /* Build configuration list for PBXNativeTarget "Scoala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C1CB941BE0C45F00E363B5 /* Debug */,
+				D4C1CB951BE0C45F00E363B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4C1CB6C1BE0C45E00E363B5 /* Project object */;
+}
