@@ -39,7 +39,7 @@ class Clasa : NSObject {
         self.discipline.append(numeDisc)
     }
     
-//    func stergere_disciplina(numeDisc : Disciplina) {
+//    func stergere_disciplina(numeDisc : Disciplina) { 
 //        
 //    }
     
