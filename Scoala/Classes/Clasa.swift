@@ -16,7 +16,7 @@ class Clasa : NSObject {
     var discipline : [Disciplina] = []
     var profesor : Profesor!
     
-    //Initializare
+    //Initializare 
     init(numeClasaInit: String, eleviInit : [Elev]!, profesorInit: Profesor!) {
         self.numeClasa = numeClasaInit
         if let eleviAux = eleviInit {
