@@ -8,7 +8,7 @@
 
 import UIKit
 
-// Aceasta este o clasa cu elevi si cu un nume
+// Aceasta este o clasa cu elevi, cu nume si cu profesor
 class Clasa : NSObject {
     
     //Proprietati
@@ -40,16 +40,13 @@ class Clasa : NSObject {
         self.discipline.append(numeDisc)
     }
     
-//    func stergere_disciplina(numeDisc : Disciplina) {
-//        
-//    }
-    
     func viz_materii() { //Functie printare MATERII (+)
         for x in self.discipline{
             print(x)
         }
     }
     
+    // Adauga profesor functie
     func adauga_profesor(numeprof: Profesor){
         self.profesor = numeprof
     }
