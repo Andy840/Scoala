@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Aceasta este o clasa cu elevi si cu un nume
 class Clasa : NSObject {
     
     //Proprietati
