@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7518F4F91BF398A2003F010A /* MateriiInDetaliiClasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7518F4F81BF398A2003F010A /* MateriiInDetaliiClasa.swift */; };
 		D404990D1BEB6CF000AA2583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D404990C1BEB6CF000AA2583 /* Main.storyboard */; };
 		D404990F1BEB6DD900AA2583 /* MeniuPrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404990E1BEB6DD900AA2583 /* MeniuPrincipalViewController.swift */; };
 		D40499111BEB6EE400AA2583 /* ListaClaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40499101BEB6EE400AA2583 /* ListaClaseTableViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7518F4F81BF398A2003F010A /* MateriiInDetaliiClasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateriiInDetaliiClasa.swift; sourceTree = "<group>"; };
 		D404990C1BEB6CF000AA2583 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D404990E1BEB6DD900AA2583 /* MeniuPrincipalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeniuPrincipalViewController.swift; sourceTree = "<group>"; };
 		D40499101BEB6EE400AA2583 /* ListaClaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaClaseTableViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				D404990C1BEB6CF000AA2583 /* Main.storyboard */,
+				7518F4F81BF398A2003F010A /* MateriiInDetaliiClasa.swift */,
 				D45BEAEF1BF0BEE800533E2E /* DetaliiElevViewController.swift */,
 				D48659481BF0B2A700946C3C /* ListaProfesoriTableViewController.swift */,
 				D486594A1BF0B2B800946C3C /* ListaDisciplineTableViewController.swift */,
@@ -193,6 +196,7 @@
 				D40499131BEB778800AA2583 /* DetaliiClasaViewController.swift in Sources */,
 				D4C1CBA21BE0C5C100E363B5 /* AppDelegate.swift in Sources */,
 				D45BEAF01BF0BEE800533E2E /* DetaliiElevViewController.swift in Sources */,
+				7518F4F91BF398A2003F010A /* MateriiInDetaliiClasa.swift in Sources */,
 				D4C1CBA61BE0C82600E363B5 /* Clasa.swift in Sources */,
 				D43EA8491BE3B21E0069F67A /* Disciplina.swift in Sources */,
 				D49A62FB1BE0E09200F406C3 /* Elev.swift in Sources */,

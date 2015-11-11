@@ -21,10 +21,7 @@ class Disciplina: NSObject {
     }
     
     //Metode
-    func print_discipline(){
-        
-    }
-    
+
     
     
 }
