@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Tac-WJ-yOV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Tac-WJ-yOV">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -21,81 +21,65 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGG-oC-4bP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679" y="166"/>
+            <point key="canvasLocation" x="44.5" y="156.5"/>
         </scene>
         <!--Meniu Principal-->
         <scene sceneID="Mt6-EW-QwB">
             <objects>
                 <viewController id="teV-1l-Nf3" customClass="MeniuPrincipalViewController" customModule="Scoala" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="svu-HP-mOy"/>
-                        <viewControllerLayoutGuide type="bottom" id="RmJ-Md-oxq"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lhp-oj-64T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVy-Zu-hah">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iVy-Zu-hah">
                                 <rect key="frame" x="136" y="259" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Lista Clase"/>
                                 <connections>
                                     <action selector="listaClasaTouched:" destination="teV-1l-Nf3" eventType="touchUpInside" id="ccW-L5-YWo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xu9-2Q-qdG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xu9-2Q-qdG">
                                 <rect key="frame" x="136" y="297" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Lista Elevi"/>
                                 <connections>
-                                    <segue destination="RsN-Zk-K1d" kind="show" identifier="listaEleviSequeIdentifier" id="zfZ-ZI-dwy"/>
+                                    <segue destination="RsN-Zk-K1d" kind="push" identifier="listaEleviSequeIdentifier" id="zfZ-ZI-dwy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikl-H9-B3A">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ikl-H9-B3A">
                                 <rect key="frame" x="136" y="335" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Lista Profesori"/>
                                 <connections>
-                                    <segue destination="z1l-72-2YU" kind="show" identifier="listaProfSegueIdentifier" id="xcM-gj-jGy"/>
+                                    <segue destination="z1l-72-2YU" kind="push" identifier="listaProfSegueIdentifier" id="xcM-gj-jGy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeP-sj-EGT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BeP-sj-EGT">
                                 <rect key="frame" x="136" y="373" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Lista Discipline"/>
                                 <connections>
-                                    <segue destination="kcg-e3-upm" kind="show" identifier="listaDisciplineSegueIdentifier" id="Q7e-8y-6xl"/>
+                                    <segue destination="kcg-e3-upm" kind="push" identifier="listaDisciplineSegueIdentifier" id="Q7e-8y-6xl"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="iVy-Zu-hah" firstAttribute="centerY" secondItem="lhp-oj-64T" secondAttribute="centerY" constant="-60" id="7xd-zs-vVw"/>
-                            <constraint firstItem="Xu9-2Q-qdG" firstAttribute="top" secondItem="iVy-Zu-hah" secondAttribute="bottom" constant="8" id="9Rg-my-kVh"/>
-                            <constraint firstItem="iVy-Zu-hah" firstAttribute="centerX" secondItem="lhp-oj-64T" secondAttribute="centerX" id="CnC-Jt-94b"/>
-                            <constraint firstItem="BeP-sj-EGT" firstAttribute="width" secondItem="ikl-H9-B3A" secondAttribute="width" id="HHT-Wd-mDK"/>
-                            <constraint firstItem="BeP-sj-EGT" firstAttribute="centerX" secondItem="ikl-H9-B3A" secondAttribute="centerX" id="MDw-8U-8iF"/>
-                            <constraint firstItem="Xu9-2Q-qdG" firstAttribute="width" secondItem="iVy-Zu-hah" secondAttribute="width" id="R7T-su-n7p"/>
-                            <constraint firstItem="BeP-sj-EGT" firstAttribute="top" secondItem="ikl-H9-B3A" secondAttribute="bottom" constant="8" id="RQK-aB-ZS8"/>
-                            <constraint firstItem="ikl-H9-B3A" firstAttribute="height" secondItem="Xu9-2Q-qdG" secondAttribute="height" id="WrK-IR-T0U"/>
-                            <constraint firstItem="ikl-H9-B3A" firstAttribute="top" secondItem="Xu9-2Q-qdG" secondAttribute="bottom" constant="8" id="ZPR-hS-BQh"/>
-                            <constraint firstItem="ikl-H9-B3A" firstAttribute="width" secondItem="Xu9-2Q-qdG" secondAttribute="width" id="aSk-n7-30N"/>
-                            <constraint firstItem="BeP-sj-EGT" firstAttribute="height" secondItem="ikl-H9-B3A" secondAttribute="height" id="aVK-I3-vIV"/>
-                            <constraint firstItem="Xu9-2Q-qdG" firstAttribute="centerX" secondItem="iVy-Zu-hah" secondAttribute="centerX" id="j7Z-t1-JCx"/>
-                            <constraint firstItem="ikl-H9-B3A" firstAttribute="centerX" secondItem="Xu9-2Q-qdG" secondAttribute="centerX" id="m5D-Yw-Gbl"/>
-                            <constraint firstItem="Xu9-2Q-qdG" firstAttribute="height" secondItem="iVy-Zu-hah" secondAttribute="height" id="r13-I3-VCV"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Meniu Principal" id="EMZ-Jx-Rtv"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="ner-Lf-XTA" kind="show" identifier="listaClaseSequeIdentifier" id="I7S-Tg-dcA"/>
+                        <segue destination="ner-Lf-XTA" kind="push" identifier="listaClaseSequeIdentifier" id="I7S-Tg-dcA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZmR-cR-o1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1465" y="166"/>
+            <point key="canvasLocation" x="484.5" y="150.5"/>
         </scene>
         <!--Lista Discipline-->
         <scene sceneID="ohi-Qj-wo6">
@@ -128,7 +112,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRz-7e-hJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1464.5" y="1010.5"/>
+            <point key="canvasLocation" x="1078.5" y="964.5"/>
         </scene>
         <!--Lista Profesori-->
         <scene sceneID="Vxr-VL-G8Y">
@@ -161,7 +145,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNo-XG-Wyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958.5" y="1010.5"/>
+            <point key="canvasLocation" x="1581.5" y="964.5"/>
         </scene>
         <!--Elevi-->
         <scene sceneID="adB-hH-ROq">
@@ -173,17 +157,17 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifierElevi" id="Su2-rh-nKL">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="reuseIdentifierElevi" id="Su2-rh-nKL">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Su2-rh-nKL" id="5Dq-Z7-F4C">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <segue destination="nDh-JH-Im5" kind="show" identifier="detaliiElev" id="kT9-tn-mQP"/>
+                                    <segue destination="nDh-JH-Im5" kind="push" identifier="detaliiElev" id="kT9-tn-mQP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -197,96 +181,82 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAC-r9-Z3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958.5" y="165.5"/>
+            <point key="canvasLocation" x="1078.5" y="156.5"/>
         </scene>
         <!--Detalii Elev-->
         <scene sceneID="idV-1w-FDD">
             <objects>
                 <viewController id="nDh-JH-Im5" customClass="DetaliiElevViewController" customModule="Scoala" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tFy-ej-Yhb"/>
-                        <viewControllerLayoutGuide type="bottom" id="22J-WU-Lbo"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jVx-Ix-wCQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nume:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4T-L8-cjr">
-                                <rect key="frame" x="20" y="85" width="111" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prenume:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOz-uI-4rY">
-                                <rect key="frame" x="20" y="131" width="111" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nume:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc5-hc-2Mo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nume:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qc5-hc-2Mo">
                                 <rect key="frame" x="20" y="94" width="111" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="numeElev printat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZE-BJ-47R">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="numeElev printat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1ZE-BJ-47R">
                                 <rect key="frame" x="139" y="94" width="155" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prenume:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hug-Kk-Fpf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prenume:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hug-Kk-Fpf">
                                 <rect key="frame" x="20" y="144" width="111" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Disciplina..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ENw-lw-ozf">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Disciplina..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="ENw-lw-ozf">
                                 <rect key="frame" x="24" y="214" width="326" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUU-bx-yQt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eUU-bx-yQt">
                                 <rect key="frame" x="24" y="275" width="326" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Vizualizare nota"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="car-EB-ZYe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="car-EB-ZYe">
                                 <rect key="frame" x="24" y="313" width="326" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Adaugare nota"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bh-L5-DXI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0bh-L5-DXI">
                                 <rect key="frame" x="24" y="351" width="326" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Stergere nota"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuK-q5-CbL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wuK-q5-CbL">
                                 <rect key="frame" x="24" y="389" width="326" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Medie disciplina"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rezultate butoane..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UN9-vC-SUp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rezultate butoane..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UN9-vC-SUp">
                                 <rect key="frame" x="20" y="444" width="335" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yc3-H0-AJS">
-                                <rect key="frame" x="23" y="380" width="97" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="prenumeElev printat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bc-ND-2CD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="prenumeElev printat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Bc-ND-2CD">
                                 <rect key="frame" x="139" y="144" width="155" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -295,20 +265,50 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="a4T-L8-cjr"/>
-                                <exclude reference="qOz-uI-4rY"/>
-                                <exclude reference="yc3-H0-AJS"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Detalii Elev" id="hZI-Vw-TLW"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ws-VL-2hC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2399.5" y="165.5"/>
+            <point key="canvasLocation" x="1581.5" y="156.5"/>
+        </scene>
+        <!--Clasa Noua-->
+        <scene sceneID="Fmb-Nf-NBE">
+            <objects>
+                <viewController id="uQx-sA-VYD" customClass="ClasaNouaViewController" customModule="Scoala" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sRy-gA-RZu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduceti numele clasei..." textAlignment="natural" minimumFontSize="17" id="QPK-PH-5R5">
+                                <rect key="frame" x="37" y="119" width="301" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xx5-a5-q6Q">
+                                <rect key="frame" x="127" y="173" width="121" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Adauga clasa"/>
+                                <connections>
+                                    <action selector="addClassButtonTouched:" destination="uQx-sA-VYD" eventType="touchUpInside" id="Wva-QP-Tor"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Clasa Noua" id="JM0-3n-UZq"/>
+                    <connections>
+                        <outlet property="textFieldClasaNoua" destination="QPK-PH-5R5" id="zxn-nO-dj8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A5k-yM-3RD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016.5" y="-1415.5"/>
         </scene>
         <!--Clase-->
         <scene sceneID="MRF-TX-UVX">
@@ -337,258 +337,84 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Clase" id="u5J-cM-gmb">
-                        <barButtonItem key="rightBarButtonItem" title="+" id="x0n-3E-1qX"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="x0n-3E-1qX">
+                            <connections>
+                                <segue destination="uQx-sA-VYD" kind="push" identifier="identifierClasaNoua" id="T9z-mH-Hz6"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="QKo-Cf-rP1" kind="show" identifier="detaliiClasa" id="b4a-3B-D0H"/>
+                        <segue destination="QKo-Cf-rP1" kind="push" identifier="detaliiClasa" id="b4a-3B-D0H"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qmK-h3-K3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958.5" y="-663.5"/>
+            <point key="canvasLocation" x="1044.5333333333333" y="-628.11333333333334"/>
         </scene>
         <!--Detalii Clasa-->
         <scene sceneID="2ns-3O-xhc">
             <objects>
-                <viewController id="QKo-Cf-rP1" customClass="DetaliiClasaViewController" customModule="Scoala" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sg2-mm-wWz"/>
-                        <viewControllerLayoutGuide type="bottom" id="g2r-iS-gjC"/>
-                    </layoutGuides>
+                <viewController id="QKo-Cf-rP1" customClass="DetaliiClaseViewController" customModule="Scoala" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iqa-t3-iQE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nume Clasa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae3-5j-tKb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nume Clasa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ae3-5j-tKb">
                                 <rect key="frame" x="20" y="72" width="111" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWI-es-bFt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ClasaSelectata" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vWI-es-bFt">
                                 <rect key="frame" x="139" y="72" width="155" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discipline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbV-Qi-H87">
-                                <rect key="frame" x="20" y="117" width="111" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v38-hY-wzb">
-                                <rect key="frame" x="11" y="141" width="353" height="130"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gr-t0-1Gg">
-                                <rect key="frame" x="20" y="203" width="335" height="46"/>
-                                <animations/>
-                                <state key="normal" title="Vizualizare Elevi"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2d2-g4-QS9">
-                                <rect key="frame" x="20" y="203" width="335" height="46"/>
-                                <animations/>
-                                <state key="normal" title="Vizualizare Materii"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaD-SP-lkB">
-                                <rect key="frame" x="20" y="311" width="335" height="46"/>
-                                <animations/>
-                                <state key="normal" title="Adauga Elev"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profesor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEu-so-Uhr">
-                                <rect key="frame" x="20" y="122" width="111" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profesor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QEu-so-Uhr">
+                                <rect key="frame" x="20" y="121" width="111" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="numele prof complet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lC1-4M-z0V">
-                                <rect key="frame" x="135" y="122" width="159" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ProfesorClasa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lC1-4M-z0V">
+                                <rect key="frame" x="139" y="121" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="fC6-2m-Sgi">
-                                <rect key="frame" x="65" y="443" width="320" height="44"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fC6-2m-Sgi" id="jQP-8z-pg4">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
-                                </tableViewCellContentView>
-                                <animations/>
-                            </tableViewCell>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s99-kN-ue6">
-                                <rect key="frame" x="224" y="257" width="131" height="46"/>
-                                <animations/>
-                                <state key="normal" title="Stergere Elev"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mg-gH-hrX">
-                                <rect key="frame" x="95" y="189" width="184" height="46"/>
-                                <animations/>
-                                <state key="normal" title="Stergere Elev"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrp-fx-t6U">
-                                <rect key="frame" x="95" y="238" width="184" height="46"/>
-                                <animations/>
-                                <state key="normal" title="Vizualizare Elevi"/>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cwG-6u-vfs">
-                                <rect key="frame" x="20" y="146" width="335" height="128"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9c-pW-gAr">
-                                <rect key="frame" x="20" y="257" width="131" height="46"/>
-                                <animations/>
-                                <state key="normal" title="Adauga Elev"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GE2-2n-sKp">
-                                <rect key="frame" x="20" y="333" width="335" height="46"/>
-                                <animations/>
-                                <state key="normal" title="Vizualizare Discipline"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uos-XY-UH1">
-                                <rect key="frame" x="224" y="387" width="131" height="46"/>
-                                <animations/>
-                                <state key="normal" title="Stergere Disciplina"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1l-Jp-UOJ">
-                                <rect key="frame" x="20" y="387" width="131" height="46"/>
-                                <animations/>
-                                <state key="normal" title="Adauga Disciplina"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rC-EM-tnC">
-                                <rect key="frame" x="20" y="462" width="335" height="46"/>
-                                <animations/>
-                                <state key="normal" title="Vizualizare Discipline"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJh-P7-Vmt">
-                                <rect key="frame" x="224" y="516" width="131" height="46"/>
-                                <animations/>
-                                <state key="normal" title="Stergere Disciplina"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wT3-In-aCm">
-                                <rect key="frame" x="20" y="516" width="131" height="46"/>
-                                <animations/>
-                                <state key="normal" title="Adauga Disciplina"/>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f3f-sv-WYa">
-                                <rect key="frame" x="20" y="220" width="340" height="128"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iY9-bM-JqQ">
-                                        <rect key="frame" x="0.0" y="28" width="340" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iY9-bM-JqQ" id="AvN-G4-fbx">
-                                            <rect key="frame" x="0.0" y="0.0" width="340" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elevi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mc7-wA-fem">
-                                <rect key="frame" x="131" y="381" width="119" height="41"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UFq-kJ-RfM">
-                                <rect key="frame" x="20" y="430" width="340" height="128"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elevi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gk1-NC-Hgn">
-                                <rect key="frame" x="125" y="427" width="119" height="41"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ICD-He-glv">
-                                <rect key="frame" x="17" y="464" width="340" height="128"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elevi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytD-ia-Iq2">
-                                <rect key="frame" x="128" y="177" width="119" height="41"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Skz-Zt-weM">
-                                <rect key="frame" x="17" y="428" width="340" height="128"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="x6j-hg-6Mh">
-                                        <rect key="frame" x="0.0" y="28" width="340" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x6j-hg-6Mh" id="3Lu-EO-TeI">
-                                            <rect key="frame" x="0.0" y="0.0" width="340" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discipline" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rte-eJ-AhO">
-                                <rect key="frame" x="125" y="385" width="119" height="41"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="IbV-Qi-H87"/>
-                                <exclude reference="v38-hY-wzb"/>
-                                <exclude reference="1gr-t0-1Gg"/>
-                                <exclude reference="2d2-g4-QS9"/>
-                                <exclude reference="XaD-SP-lkB"/>
-                                <exclude reference="fC6-2m-Sgi"/>
-                                <exclude reference="s99-kN-ue6"/>
-                                <exclude reference="4mg-gH-hrX"/>
-                                <exclude reference="wrp-fx-t6U"/>
-                                <exclude reference="cwG-6u-vfs"/>
-                                <exclude reference="i9c-pW-gAr"/>
-                                <exclude reference="GE2-2n-sKp"/>
-                                <exclude reference="Uos-XY-UH1"/>
-                                <exclude reference="A1l-Jp-UOJ"/>
-                                <exclude reference="4rC-EM-tnC"/>
-                                <exclude reference="SJh-P7-Vmt"/>
-                                <exclude reference="wT3-In-aCm"/>
-                                <exclude reference="Mc7-wA-fem"/>
-                                <exclude reference="UFq-kJ-RfM"/>
-                                <exclude reference="Gk1-NC-Hgn"/>
-                                <exclude reference="ICD-He-glv"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Detalii Clasa" id="nz4-dj-esh"/>
+                    <navigationItem key="navigationItem" title="Detalii Clasa" id="nz4-dj-esh">
+                        <barButtonItem key="rightBarButtonItem" image="Trash-25.png" id="czz-DI-4yW">
+                            <connections>
+                                <action selector="removeClassButton:" destination="QKo-Cf-rP1" id="nR0-VX-IQJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="numeClasaLabel" destination="vWI-es-bFt" id="NQI-b1-iIN"/>
+                        <outlet property="ClasaSelectataLabel" destination="vWI-es-bFt" id="ziw-Ig-hvz"/>
+                        <outlet property="ProfesorClasaLabel" destination="lC1-4M-z0V" id="xFK-Lt-7z1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uG2-vk-bQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2399.5" y="-663.5"/>
+            <point key="canvasLocation" x="1581.5" y="-628.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Trash-25.png" width="25" height="25"/>
+    </resources>
 </document>

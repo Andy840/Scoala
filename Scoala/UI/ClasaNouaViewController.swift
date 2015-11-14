@@ -1,18 +1,23 @@
 //
-//  MateriiInDetaliiClasa.swift
+//  ClasaNouaViewController.swift
 //  Scoala
 //
-//  Created by Andrei on 11/11/15.
+//  Created by Andrei on 13/11/15.
 //  Copyright © 2015 AP. All rights reserved.
 //
 
 import UIKit
 
-class MateriiInDetaliiClasa: UIViewController {
+class ClasaNouaViewController: UIViewController {
+    
+    @IBOutlet weak var textFieldClasaNoua: UITextField!
+    var scoala : Scoala = Scoala();
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
 
@@ -32,4 +37,16 @@ class MateriiInDetaliiClasa: UIViewController {
     }
     */
 
+    
+    
+    @IBAction func addClassButtonTouched(sender: AnyObject) {
+        // Adaugare clasa
+        let clasaNouaNume = Clasa( numeClasaInit: textFieldClasaNoua.text!, eleviInit: [], profesorInit: nil)
+        
+        self.scoala.listaClase.append(clasaNouaNume)
+        
+        // Ne intoarcem la lista de clase
+        self.navigationController?.popViewControllerAnimated(true)
+        
+    }
 }

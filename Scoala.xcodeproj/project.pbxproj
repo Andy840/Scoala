@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7518F4F91BF398A2003F010A /* MateriiInDetaliiClasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7518F4F81BF398A2003F010A /* MateriiInDetaliiClasa.swift */; };
+		751933451BF626BE00EBADBA /* DetaliiClaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751933441BF626BE00EBADBA /* DetaliiClaseViewController.swift */; };
+		751933471BF62F0600EBADBA /* ClasaNouaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751933461BF62F0600EBADBA /* ClasaNouaViewController.swift */; };
+		751933491BF63BBF00EBADBA /* Scoala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751933481BF63BBF00EBADBA /* Scoala.swift */; };
+		751933501BF643CF00EBADBA /* Trash-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 7519334F1BF643CF00EBADBA /* Trash-25.png */; };
 		D404990D1BEB6CF000AA2583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D404990C1BEB6CF000AA2583 /* Main.storyboard */; };
 		D404990F1BEB6DD900AA2583 /* MeniuPrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404990E1BEB6DD900AA2583 /* MeniuPrincipalViewController.swift */; };
 		D40499111BEB6EE400AA2583 /* ListaClaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40499101BEB6EE400AA2583 /* ListaClaseTableViewController.swift */; };
-		D40499131BEB778800AA2583 /* DetaliiClasaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40499121BEB778800AA2583 /* DetaliiClasaViewController.swift */; };
 		D43EA8491BE3B21E0069F67A /* Disciplina.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43EA8481BE3B21E0069F67A /* Disciplina.swift */; };
 		D45BEAF01BF0BEE800533E2E /* DetaliiElevViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45BEAEF1BF0BEE800533E2E /* DetaliiElevViewController.swift */; };
 		D48659471BF0A38300946C3C /* ListaEleviTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48659461BF0A38300946C3C /* ListaEleviTableViewController.swift */; };
@@ -25,11 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7518F4F81BF398A2003F010A /* MateriiInDetaliiClasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateriiInDetaliiClasa.swift; sourceTree = "<group>"; };
+		751933441BF626BE00EBADBA /* DetaliiClaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetaliiClaseViewController.swift; sourceTree = "<group>"; };
+		751933461BF62F0600EBADBA /* ClasaNouaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClasaNouaViewController.swift; sourceTree = "<group>"; };
+		751933481BF63BBF00EBADBA /* Scoala.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scoala.swift; sourceTree = "<group>"; };
+		7519334F1BF643CF00EBADBA /* Trash-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Trash-25.png"; path = "../Images/Trash-25.png"; sourceTree = "<group>"; };
 		D404990C1BEB6CF000AA2583 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D404990E1BEB6DD900AA2583 /* MeniuPrincipalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeniuPrincipalViewController.swift; sourceTree = "<group>"; };
 		D40499101BEB6EE400AA2583 /* ListaClaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaClaseTableViewController.swift; sourceTree = "<group>"; };
-		D40499121BEB778800AA2583 /* DetaliiClasaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetaliiClasaViewController.swift; sourceTree = "<group>"; };
 		D43EA8481BE3B21E0069F67A /* Disciplina.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disciplina.swift; sourceTree = "<group>"; };
 		D45BEAEF1BF0BEE800533E2E /* DetaliiElevViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetaliiElevViewController.swift; sourceTree = "<group>"; };
 		D48659461BF0A38300946C3C /* ListaEleviTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaEleviTableViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +43,7 @@
 		D49A62FA1BE0E09200F406C3 /* Elev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elev.swift; sourceTree = "<group>"; };
 		D4C1CB741BE0C45E00E363B5 /* Scoala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scoala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C1CB781BE0C45F00E363B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4C1CBA01BE0C5C100E363B5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D4C1CBA01BE0C5C100E363B5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		D4C1CBA31BE0C65700E363B5 /* Persoana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persoana.swift; sourceTree = "<group>"; };
 		D4C1CBA51BE0C82600E363B5 /* Clasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clasa.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,18 +59,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7519334A1BF6417F00EBADBA /* Clasa */ = {
+			isa = PBXGroup;
+			children = (
+				D40499101BEB6EE400AA2583 /* ListaClaseTableViewController.swift */,
+				751933441BF626BE00EBADBA /* DetaliiClaseViewController.swift */,
+				751933461BF62F0600EBADBA /* ClasaNouaViewController.swift */,
+			);
+			name = Clasa;
+			sourceTree = "<group>";
+		};
+		7519334C1BF641C300EBADBA /* Elevi */ = {
+			isa = PBXGroup;
+			children = (
+				D45BEAEF1BF0BEE800533E2E /* DetaliiElevViewController.swift */,
+				D48659461BF0A38300946C3C /* ListaEleviTableViewController.swift */,
+			);
+			name = Elevi;
+			sourceTree = "<group>";
+		};
+		7519334D1BF641DD00EBADBA /* Profesor */ = {
+			isa = PBXGroup;
+			children = (
+				D48659481BF0B2A700946C3C /* ListaProfesoriTableViewController.swift */,
+			);
+			name = Profesor;
+			sourceTree = "<group>";
+		};
+		7519334E1BF6428E00EBADBA /* Discipline */ = {
+			isa = PBXGroup;
+			children = (
+				D486594A1BF0B2B800946C3C /* ListaDisciplineTableViewController.swift */,
+			);
+			name = Discipline;
+			sourceTree = "<group>";
+		};
+		751933511BF643DD00EBADBA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7519334F1BF643CF00EBADBA /* Trash-25.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		D404990B1BEB6CD600AA2583 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D4C1CBA01BE0C5C100E363B5 /* AppDelegate.swift */,
 				D404990C1BEB6CF000AA2583 /* Main.storyboard */,
-				7518F4F81BF398A2003F010A /* MateriiInDetaliiClasa.swift */,
-				D45BEAEF1BF0BEE800533E2E /* DetaliiElevViewController.swift */,
-				D48659481BF0B2A700946C3C /* ListaProfesoriTableViewController.swift */,
-				D486594A1BF0B2B800946C3C /* ListaDisciplineTableViewController.swift */,
-				D48659461BF0A38300946C3C /* ListaEleviTableViewController.swift */,
 				D404990E1BEB6DD900AA2583 /* MeniuPrincipalViewController.swift */,
-				D40499101BEB6EE400AA2583 /* ListaClaseTableViewController.swift */,
-				D40499121BEB778800AA2583 /* DetaliiClasaViewController.swift */,
+				7519334A1BF6417F00EBADBA /* Clasa */,
+				7519334E1BF6428E00EBADBA /* Discipline */,
+				7519334D1BF641DD00EBADBA /* Profesor */,
+				7519334C1BF641C300EBADBA /* Elevi */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -90,8 +135,8 @@
 		D4C1CB761BE0C45E00E363B5 /* Scoala */ = {
 			isa = PBXGroup;
 			children = (
+				751933511BF643DD00EBADBA /* Images */,
 				D404990B1BEB6CD600AA2583 /* UI */,
-				D4C1CBA01BE0C5C100E363B5 /* AppDelegate.swift */,
 				D4C1CBA11BE0C5C100E363B5 /* Classes */,
 				D4C1CB771BE0C45E00E363B5 /* Supporting Files */,
 			);
@@ -114,6 +159,7 @@
 				D49A62FA1BE0E09200F406C3 /* Elev.swift */,
 				D49A62F81BE0E07300F406C3 /* Profesor.swift */,
 				D43EA8481BE3B21E0069F67A /* Disciplina.swift */,
+				751933481BF63BBF00EBADBA /* Scoala.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -178,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D404990D1BEB6CF000AA2583 /* Main.storyboard in Resources */,
+				751933501BF643CF00EBADBA /* Trash-25.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,14 +238,15 @@
 				D404990F1BEB6DD900AA2583 /* MeniuPrincipalViewController.swift in Sources */,
 				D48659471BF0A38300946C3C /* ListaEleviTableViewController.swift in Sources */,
 				D48659491BF0B2A700946C3C /* ListaProfesoriTableViewController.swift in Sources */,
+				751933471BF62F0600EBADBA /* ClasaNouaViewController.swift in Sources */,
 				D4C1CBA41BE0C65700E363B5 /* Persoana.swift in Sources */,
 				D40499111BEB6EE400AA2583 /* ListaClaseTableViewController.swift in Sources */,
-				D40499131BEB778800AA2583 /* DetaliiClasaViewController.swift in Sources */,
 				D4C1CBA21BE0C5C100E363B5 /* AppDelegate.swift in Sources */,
 				D45BEAF01BF0BEE800533E2E /* DetaliiElevViewController.swift in Sources */,
-				7518F4F91BF398A2003F010A /* MateriiInDetaliiClasa.swift in Sources */,
 				D4C1CBA61BE0C82600E363B5 /* Clasa.swift in Sources */,
+				751933491BF63BBF00EBADBA /* Scoala.swift in Sources */,
 				D43EA8491BE3B21E0069F67A /* Disciplina.swift in Sources */,
+				751933451BF626BE00EBADBA /* DetaliiClaseViewController.swift in Sources */,
 				D49A62FB1BE0E09200F406C3 /* Elev.swift in Sources */,
 				D49A62F91BE0E07300F406C3 /* Profesor.swift in Sources */,
 				D486594B1BF0B2B800946C3C /* ListaDisciplineTableViewController.swift in Sources */,

@@ -10,11 +10,16 @@ import UIKit
 
 class ListaClaseTableViewController: UITableViewController {
 
-    var lista : [Clasa] = []
+    var scoala : Scoala = Scoala();
     var clasaSelectata : Clasa!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        self.tableView.reloadData();
     }
 
     // MARK: - Table view data source
@@ -28,14 +33,14 @@ class ListaClaseTableViewController: UITableViewController {
     //Functie nr randuri
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.lista.count
+        return self.scoala.listaClase.count
     }
     
     //Functie text celula
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
-        cell.textLabel?.text = self.lista[indexPath.row].numeClasa
+        cell.textLabel?.text = self.scoala.listaClase[indexPath.row].numeClasa
         
         // Configure the cell...
 
@@ -44,7 +49,7 @@ class ListaClaseTableViewController: UITableViewController {
     
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.clasaSelectata = self.lista[indexPath.row]
+        self.clasaSelectata = self.scoala.listaClase[indexPath.row]
         
         self.performSegueWithIdentifier("detaliiClasa", sender: nil)
     }
@@ -63,8 +68,18 @@ class ListaClaseTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         
         if (segue.identifier == "detaliiClasa") {
-            let detaliiCLasa = segue.destinationViewController as! DetaliiClasaViewController
-            detaliiCLasa.clasaSelectata = self.clasaSelectata
+            let detaliiCLasa = segue.destinationViewController as! DetaliiClaseViewController
+            detaliiCLasa.clasaSelectataDet = self.clasaSelectata
+        }
+        
+        if (segue.identifier == "detaliiClasa") {
+            let detaliiCLasa = segue.destinationViewController as! DetaliiClaseViewController
+            detaliiCLasa.scoala = self.scoala
+        }
+        
+        if (segue.identifier == "identifierClasaNoua") {
+            let listaSegue = segue.destinationViewController as! ClasaNouaViewController
+            listaSegue.scoala = self.scoala
         }
     }
 
